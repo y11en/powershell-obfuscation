@@ -1,6 +1,6 @@
 # powershell-obfuscation
 
-简单有效的powershell免杀混淆器的小工具，VT全绿，可过Defender、360等，可执行上线cobaltstrike等操作。
+简单有效的powershell免杀混淆的小工具，VT全绿，可过Defender、360等，可执行上线cobaltstrike等操作。
 
 AMSI混淆绕过+powershell命令混淆绕过。
 
