@@ -76,11 +76,11 @@ Take beacon.ps1 as an example
 
 混淆前VT如下：
 
-![image](https://github.com/H4de5-7/powershell-obfuscation/blob/main/VTorigin.png)
+![1671255963304](https://user-images.githubusercontent.com/48757788/208227398-4b3abb77-bef6-4891-9798-31255c9557f8.png)
 
 混淆后VT如下：
 
-![image](https://github.com/H4de5-7/powershell-obfuscation/blob/main/VTbypass.png)
+![1671255985878](https://user-images.githubusercontent.com/48757788/208227402-42d2cfce-9b19-4c69-b4b9-da2a4fc609f7.png)
 
 上线：
 
