@@ -2,7 +2,7 @@
 
 简单有效的powershell免杀混淆的小工具，VT全绿，可过Defender、360等，可执行上线cobaltstrike等操作。
 
-AMSI混淆绕过+powershell命令混淆绕过。
+AMSI混淆绕过+ETW混淆block+powershell命令混淆绕过。
 
 **请勿使用于任何非法用途，由此产生的后果自行承担。**
 
@@ -10,7 +10,7 @@ AMSI混淆绕过+powershell命令混淆绕过。
 
 A simple and effective powershell obfuscaiton tool bypass Anti-Virus, VT.
 
-AMSI-bypass obfuscation + powershell command obfuscation.
+AMSI-bypass obfuscation + ETW-block obfuscation + powershell command obfuscation.
 
 **Please do not use it for any illegal purpose, and the consequences arising therefrom shall be borne by yourself.**
 
@@ -36,7 +36,7 @@ AMSI-bypass obfuscation + powershell command obfuscation.
 
 3、为了能让字符有效地输出，最后用base64编码了一下（即便在AST层面上解开也无所谓，因为解开了的内容仍是混淆之后的）。
 
-同时对AMSI绕过与powershell命令进行了混淆。
+同时对AMSI绕过与ETW block与powershell命令进行了混淆。
 
 这里仅仅实现了一个简单的混淆器demo，可以自由发挥，后续要是有时间的话我会继续完善。
 
@@ -56,7 +56,7 @@ Aiming at the difficulties of these the academic research, I wrote a simple powe
 
 3. In order to allow the characters to be effectively output, it is finally encoded with base64 (even if it is decoded at the AST level, it does not matter, because the decoded content is still obfuscated).
 
-This tool implements AMSI-bypass obfuscation and powershell command obfuscation.
+This tool implements AMSI-bypass obfuscation, ETW-block obfuscation and powershell command obfuscation.
 
 ## 使用的方法
 
