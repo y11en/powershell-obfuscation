@@ -16,7 +16,7 @@ AMSI-bypass obfuscation + ETW-block obfuscation + powershell command obfuscation
 
 ## 思路
 
-这段时间看了看powershell反混淆相关的内容与论文，目前反混淆效果最好的应该是2022年qax的《Invoke-Deobfuscation: AST-Based and Semantics-Preserving Deobfuscation for PowerShell Scripts》，该论文延续了19年CCS浙大的思路并进行了改进，使用了变量追踪并在AST层面上进行了invoke解混淆，属于静态分析加部分的动态分析，比defender和VT的效果好不少。
+这段时间看了看powershell反混淆相关的内容与论文，目前反混淆效果最好的应该是2022年qax的《Invoke-Deobfuscation: AST-Based and Semantics-Preserving Deobfuscation for PowerShell Scripts》，该论文延续了19年CCS浙大的思路并进行了改进，使用了变量追踪并在AST层面上进行了invoke解混淆，比defender和VT的效果好不少。
 
 **不过论文中也提到了当前powershell反混淆研究的难点，一个是自定义function加密解不开，一个是很难去追踪循环中的变量。**
 
