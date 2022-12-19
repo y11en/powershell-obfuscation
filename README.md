@@ -20,12 +20,6 @@ AMSI-bypass obfuscation + ETW-block obfuscation + powershell command obfuscation
 
 **不过论文中也提到了当前powershell反混淆研究的难点，一个是自定义function加密解不开，一个是很难去追踪循环中的变量。**
 
-由于当前的powershell反混淆研究中对静态代码分析研究的并不算很多，暂未像C/Java中的静态代码分析一样可以有效追踪变量的调用与传播，因此对于循环中变量的传播暂时没有很好的解决办法。
-
-同时function的调用可能需要更复杂的静态与动态分析，还要考虑到function嵌套的问题，因此暂时也没有很好的解决办法。
-
-上述两个点可能是未来powershell反混淆需要去研究的内容。
-
 由于部分的反混淆工具会在AST层面上进行反混淆的工作，因此powershell自带的大部分加密解密/编码解码的函数是形同虚设的，如[System.Convert]::FromBase64String等。应该尽可能去使用自定义的加密解密的function。
 
 这里针对这两个学术界研究的难点，写了一个简单的powershell混淆器，事实证明效果确实也不错。具体思路如下：
